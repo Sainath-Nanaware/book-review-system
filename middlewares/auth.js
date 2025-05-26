@@ -1,0 +1,18 @@
+const jwtwebtoken=require('jsonwebtoken')
+
+
+const auth=(req, resp,next)=>{
+    const token=req.headers.authorization?.split(" ")[1];
+    if(!token){
+        return resp.status(401).json({message:"token not provided"})
+    }
+    try{
+        const decodeToken=jwtwebtoken.decode(token,process.env.JWT_SECRET)
+        req.userId=decodeToken.userId
+        req.role=decodeToken.role
+        next()
+    }catch(error){
+        return resp.status(401).json({ message: "Invalid token" });
+
+    }
+}
