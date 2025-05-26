@@ -12,9 +12,10 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-app.get("/", (req, res) => {
-  res.send("Hello World!");
-});
+//user routes
+const userRoutes=require('./routes/userRoutes')
+app.use("/user",userRoutes)
+
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
