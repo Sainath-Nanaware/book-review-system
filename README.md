@@ -2,10 +2,10 @@
 
 ### Project Setup Instructions:
 
-## 1. Clone the repository
-## 2. Install dependencies
-## 3. Create a .env file
-## 4. Run the server
+### 1. Clone the repository
+### 2. Install dependencies
+### 3. Create a .env file
+### 4. Run the server
 
 # ----------------------------------------------------------------------------------------
 ### Example API Requests:
