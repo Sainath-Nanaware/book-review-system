@@ -7,7 +7,7 @@
 ### 3. Create a .env file
 ### 4. Run the server
 
-# ----------------------------------------------------------------------------------------
+# ------------------------------------------------------
 ### Example API Requests:
 
 ##  User:
@@ -27,13 +27,13 @@
 ### Search Book
 ## http://localhost:4000/books/search
 
-# -------------------------------------------------------------------------------------------
+# -----------------------------------------------
 ### Design Decisions & Assumptions:
 
-## Used JWT for user authentication.
-## A user can only review a book once.
-## Used Mongoose validation and Joi for input validation.
-## Routes are protected using middleware for authenticated access.
-## Pagination is implemented on book listing and reviews.
+### Used JWT for user authentication.
+### A user can only review a book once.
+### Used Mongoose validation and Joi for input validation.
+### Routes are protected using middleware for authenticated access.
+### Pagination is implemented on book listing and reviews.
 
 
