@@ -20,6 +20,9 @@ app.use("/user",userRoutes)
 const bookRoutes=require('./routes/bookRoutes')
 app.use("/books",bookRoutes)
 
+//review routes
+const reviewRoutes=require('./routes/reviewRoutes')
+app.use("/review",reviewRoutes)
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
