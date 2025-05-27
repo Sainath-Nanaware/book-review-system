@@ -16,3 +16,5 @@ const auth=(req, resp,next)=>{
 
     }
 }
+
+module.exports=auth

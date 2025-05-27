@@ -16,6 +16,10 @@ app.use(express.json());
 const userRoutes=require('./routes/userRoutes')
 app.use("/user",userRoutes)
 
+//book routes
+const bookRoutes=require('./routes/bookRoutes')
+app.use("/books",bookRoutes)
+
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
