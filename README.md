@@ -30,10 +30,10 @@
 ### -----------------------------------------------
 ### Design Decisions & Assumptions:
 
-#### Used JWT for user authentication.
-#### A user can only review a book once.
-#### Used Mongoose validation and Joi for input validation.
-#### Routes are protected using middleware for authenticated access.
-#### Pagination is implemented on book listing and reviews.
+#### 1. Used JWT for user authentication.
+#### 2. A user can only review a book once.
+#### 3. Used Mongoose validation and Joi for input validation.
+#### 4. Routes are protected using middleware for authenticated access.
+#### 5. Pagination is implemented on book listing and reviews.
 
 
